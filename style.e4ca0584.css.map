@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AACA,YACE,aAAc,CACd,kBACF,CAEA,uBACE,kBACF,CAEA,uBACE,QACF","file":"style.e4ca0584.css","sourceRoot":"..\\src","sourcesContent":["\n.form-field {\n  display: block;\n  margin-bottom: 10px;\n}\n\n.registration-fieldset {\n  margin-bottom: 20px;\n}\n\n.form-field:last-child {\n  margin: 0;\n}\n"]}
