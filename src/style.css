@@ -7,3 +7,7 @@
 .registration-fieldset {
   margin-bottom: 20px;
 }
+
+.form-field:last-child {
+  margin: 0;
+}
