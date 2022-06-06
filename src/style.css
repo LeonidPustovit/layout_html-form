@@ -1,5 +1,9 @@
 
-label {
+.form-field {
   display: block;
   margin-bottom: 10px;
+}
+
+.registration-button {
+  margin-top: 20px;
 }
