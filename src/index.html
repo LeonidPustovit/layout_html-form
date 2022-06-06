@@ -11,33 +11,45 @@
   </head>
 
   <body>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
-      <fieldset>
+    <form 
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+    >
+      <fieldset class="registration-fieldset">
         <legend>Personal information</legend>
+
         <label class="form-field" for="surname">
           Surname:
           <input 
             type="text" 
             name="surname" 
             id="surname"
+            autocomplete="off"
           >
         </label>
+
         <label class="form-field" for="name">
           Name:
           <input 
             type="text" 
             name="name" 
             id="name"
+            autocomplete="off"
           >
         </label>
+
         <label class="form-field" for="age">
           How old are You?
           <input 
             type="number" 
             name="age" 
             id="age"
+            min="1"
+            max="100"
+            value="12"
           >
         </label>
+
         <label class="form-field" for="birthDate">
           Full date of birth:
           <input 
@@ -46,6 +58,7 @@
             id="birthDate"
           >
         </label>
+
         <label class="form-field" for="terms">
           I accept the term of the agreement
           <input 
@@ -56,8 +69,9 @@
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="registration-fieldset">
         <legend>Registration</legend>
+
         <label class="form-field" for="email">
           E-mail:
           <input 
@@ -65,20 +79,26 @@
             name="email" 
             id="email"
             placeholder="email@example.com"
+            required
           >
         </label>
+
         <label class="form-field" for="password">
           Password:
           <input 
             type="password" 
             name="password" 
             id="password"
+            required
+            minlength="4"
+            maxlength="32"
           >
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="registration-fieldset">
         <legend>An interesting fact about you!</legend>
+
         <div class="form-field">
           Do you love cats?
           <label>
@@ -98,6 +118,7 @@
             - no
           </label>
         </div>
+
         <label class="form-field" for="facoriteColor">
           What is your favorite color?
           <input 
@@ -106,6 +127,7 @@
             id="favoriteColor"
           >
         </label>
+
         <label class="form-field" for="bedTime">
           What time do you go to bed?
           <input 
@@ -114,6 +136,7 @@
             id="bedTime"
           >
         </label>
+
         <label for="favotireCars" class="form-field">
           What are your favorite brand of cars?
           <select 
@@ -126,6 +149,7 @@
             <option value="lada">Lada</option>
           </select>
         </label>
+
         <label for="workRate">
           How do you rate your work?
           <input 
@@ -137,8 +161,9 @@
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="registration-fieldset">
         <legend>Additional info:</legend>
+
         <label for="comments" class="form-field">
           Comments:
           <textarea 
@@ -149,6 +174,7 @@
           >
           </textarea>
         </label>
+
         <label for="reccomendation">
           Would you reccomend us?
           <select name="reccomendation" id="reccomendation">
@@ -157,8 +183,12 @@
           </select>
         </label>
       </fieldset>
-      <button class="registration-button">Submit</button>
+
+      <button type="submit" class="registration-button">
+        Submit
+      </button>
     </form>
+    
     <script type="text/javascript" src="./main.js"></script>
   </body>
 
